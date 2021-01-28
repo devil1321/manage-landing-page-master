@@ -3,6 +3,7 @@ menu = document.querySelector('.nav__list');
 navItem = document.querySelectorAll('.nav__item');
 overlay = document.querySelector('.nav__overlay');
 
+
 function mediaQueries() {
     if (window.innerWidth > 1040) {
         menu.style.display = 'flex';
@@ -13,16 +14,23 @@ function mediaQueries() {
             item.style.transition = "none";
         })
     } else {
-        menu.style.height = '0px';
-        menu.style.display = 'none';
-        setTimeout(() => {
-            menu.style.display = 'flex';
-            menu.style.transition = 'all 500ms ease-in-out';
-        }, 500)
-        navItem.forEach(item => {
-            item.style.opacity = 0;
-            item.style.transition = "all 1s ease-in-out";
-        })
+        if (navBtn.classList.contains('open')) {
+            overlay.style.visibility = 'visible';
+            overlay.style.opacity = '1';
+            menu.style.height = '18.1875rem';
+            menu.style.padding = '2.875rem 0rem';
+        } else {
+            menu.style.height = '0px';
+            menu.style.display = 'none';
+            setTimeout(() => {
+                menu.style.display = 'flex';
+                menu.style.transition = 'all 500ms ease-in-out';
+            }, 500)
+            navItem.forEach(item => {
+                item.style.opacity = 0;
+                item.style.transition = "all 1s ease-in-out";
+            })
+        }
     }
 }
 window.addEventListener('resize', mediaQueries);

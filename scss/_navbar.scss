@@ -55,8 +55,8 @@
             }
         }
         &__list {
+            height: 0;
             overflow: hidden;
-            height: 0rem;
             border-radius: 0.3125rem;
             background-color: $veryLightGray;
             box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
