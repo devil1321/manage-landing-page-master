@@ -1,0 +1,55 @@
+.feature {
+    box-sizing: border-box;
+    @include breakpoint-up(large) {
+        display: flex;
+        padding: 0rem 8rem;
+    }
+    &__left-wrapper {
+        padding: 0rem 1.625rem;
+        text-align: center;
+        p {
+            margin: 1.875rem 0rem;
+        }
+        @include breakpoint-up(large) {
+            margin-top: 50px;
+            width: 50%;
+            text-align: left;
+        }
+    }
+    &__right-wrapper {
+        margin-top: 3.125rem;
+        margin-bottom: 5rem;
+        @include breakpoint-up(large) {
+            width: 50%;
+        }
+    }
+    &__text-wrapper {
+        padding-left: 1rem;
+        p {
+            margin: 1.125rem 0rem;
+        }
+        @include breakpoint-up(large) {
+            p {
+                margin-left: 5.3125rem;
+                width: 95%;
+            }
+        }
+    }
+    &__text-header {
+        background-color: $veryPaleRed;
+        border-top-left-radius: 1.5625rem;
+        border-bottom-left-radius: 1.5625rem;
+        @include breakpoint-up(large) {
+            background: transparent;
+        }
+    }
+    &__bandge {
+        font-weight: $font-bold;
+        width: 4.125rem;
+        height: 2.5rem;
+        margin-right: 1.25rem;
+        color: white;
+        background-color: $brightRed;
+        border-radius: 1.5625rem;
+    }
+}

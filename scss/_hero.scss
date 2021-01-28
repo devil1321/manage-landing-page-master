@@ -1,0 +1,31 @@
+.hero {
+    box-sizing: border-box;
+    margin-bottom: 6.5625rem;
+    @include breakpoint-up(large) {
+        padding: 0rem 8rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &__text {
+        text-align: center;
+        padding: 0rem 1.625rem;
+        p {
+            margin: 1.875rem 0rem;
+        }
+        @include breakpoint-up(large) {
+            order: 1;
+            text-align: left;
+            h2 {
+                font-size: 40px;
+            }
+        }
+    }
+    &__image {
+        @include breakpoint-up(large) {
+            order: 2;
+        }
+        margin-top: 100px;
+        width: 100%;
+    }
+}

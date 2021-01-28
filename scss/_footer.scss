@@ -1,0 +1,150 @@
+.footer {
+    &__top {
+        height: 25rem;
+        font-weight: $font-bold;
+        font-size: 2.1875rem;
+        color: $veryLightGray;
+        background-color: $brightRed;
+        @include breakpoint-up(large) {
+            position: relative;
+            padding: 0rem 2.5rem;
+            height: 13.75rem;
+            padding: 0rem 8rem;
+        }
+        button {
+            background-color: $veryLightGray;
+            color: $brightRed;
+            font-weight: $font-bold;
+        }
+    }
+    &__image-top {
+        opacity: 0.1;
+        position: absolute;
+        width: 150%;
+        top: 2%;
+        left: -120%;
+        @include breakpoint-up(large) {
+            width: 45%;
+            top: -30%;
+            left: 5%;
+        }
+    }
+    &__text {
+        flex-direction: column;
+        h2 {
+            position: relative;
+            z-index: 1;
+            text-align: center;
+            width: 85%;
+            margin-bottom: 2.1875rem;
+            @include breakpoint-up(large) {
+                width: 35%;
+                text-align: left;
+            }
+        }
+        @include breakpoint-up(large) {
+            width: 100%;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+    }
+    &__image-bottom {
+        display: none;
+        @include breakpoint-up(large) {
+            display: block;
+            opacity: 0.1;
+            width: 40%;
+            position: absolute;
+            top: -170%;
+            right: -20%;
+        }
+    }
+    &__bottom {
+        padding: 3.125rem 0rem 2.525rem;
+        background-color: $veryDarkBlue;
+        @include breakpoint-up(large) {
+            padding: 3.125rem 0.5rem 3rem 2rem;
+            box-sizing: border-box;
+            position: relative;
+            z-index: 1;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: flex-start;
+            max-height: 15.625rem;
+        }
+    }
+    &__grid-1 {
+        margin-bottom: 3.75rem;
+        padding: 0rem 1.5625rem;
+        @include breakpoint-up(large) {
+            order: 3;
+        }
+        button {
+            filter: drop-shadow(0 0 0 transparent);
+        }
+    }
+    &__input {
+        width: 65%;
+        padding: 0.625rem 0.9375rem;
+        border-radius: 1.5625rem;
+        border: none;
+        margin-right: 0.3125rem;
+    }
+    &__grid-2 {
+        margin-bottom: 3.125rem;
+        @include breakpoint-up(large) {
+            position: relative;
+            top: -1.5625rem;
+            order: 2;
+            width: 25%;
+            justify-content: space-between;
+        }
+    }
+    &__item {
+        list-style-type: none;
+        margin: 1.25rem 0rem;
+    }
+    &__link {
+        color: $veryLightGray;
+        &:hover {
+            cursor: pointer;
+            color: $brightRed;
+        }
+    }
+    &__grid-3 {
+        margin-bottom: 4.125rem;
+        @include breakpoint-up(large) {
+            order: 1;
+        }
+    }
+    &__logo {
+        display: block;
+        width: 50%;
+        margin: 3.125rem auto;
+        order: 2;
+        @include breakpoint-up(large) {
+            margin: 0px;
+            margin-bottom: 6.25rem;
+            order: 1;
+            width: 70%;
+            position: relative;
+        }
+    }
+    &__icons {
+        order: 1;
+        img:not(:last-child) {
+            margin-right: 1.875rem;
+        }
+        @include breakpoint-up(large) {
+            order: 2;
+        }
+    }
+    p {
+        @include breakpoint-up(large) {
+            position: absolute;
+            bottom: 65px;
+            right: 8rem;
+        }
+        text-align: center;
+    }
+}

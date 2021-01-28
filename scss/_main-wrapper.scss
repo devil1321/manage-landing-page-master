@@ -1,0 +1,29 @@
+.main-wrapper {
+    position: relative;
+    overflow: hidden;
+    &__top-image {
+        position: absolute;
+        z-index: -1;
+        width: 95%;
+        top: -3.125rem;
+        right: -3.125rem;
+        transform: rotate(180deg);
+        @include breakpoint-up(large) {
+            width: 65%;
+            top: -16.125rem;
+            right: -10.125rem;
+        }
+    }
+    &__medium-image {
+        position: absolute;
+        width: 95%;
+        top: 32%;
+        right: -55%;
+        z-index: -1;
+        @include breakpoint-up(large) {
+            top: 75%;
+            left: -45%;
+            width: 70%;
+        }
+    }
+}

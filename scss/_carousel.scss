@@ -1,0 +1,57 @@
+.carousel {
+    text-align: center;
+    overflow: hidden;
+    h2 {
+        margin-bottom: 60px;
+    }
+    &__card {
+        min-width: 100%;
+        @include breakpoint-up(large) {
+            min-width: 33%;
+            p {
+                width: 100%;
+            }
+        }
+        @include breakpoint-down(medium) {
+            p {
+                margin: 0px auto;
+                width: 50%;
+            }
+        }
+        @include breakpoint-down(small) {
+            p {
+                margin: 0px auto;
+                width: 90%;
+            }
+        }
+        h3 {
+            margin: 1.875rem 0rem;
+        }
+        p {
+            padding: 0rem 1.5rem;
+        }
+    }
+    &__box {
+        position: relative;
+        top: 0px;
+        right: 0px;
+        transition: all 1s ease-in-out;
+    }
+    &__controls {
+        margin: 71px 0px 41px
+    }
+    &__control-btn {
+        cursor: pointer;
+        margin: 0px 2px;
+        width: 10px;
+        height: 10px;
+        border: 1px solid $brightRed;
+        border-radius: 100%;
+        &.active {
+            background-color: $brightRed;
+        }
+    }
+    button {
+        margin-bottom: 41px;
+    }
+}

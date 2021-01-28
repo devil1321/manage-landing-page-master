@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam:wght@400;500;700&display=swap');
+.d-flex {
+    display: flex;
+}
+
+.f-c {
+    flex-direction: column;
+}
+
+.j-c-sa {
+    justify-content: space-around;
+}
+
+.j-c-c {
+    justify-content: center;
+}
+
+.j-c-sb {
+    justify-content: space-between;
+}
+
+.a-i-sa {
+    align-items: space-around;
+}
+
+.a-i-c {
+    align-items: center;
+}
+
+.a-i-sb {
+    align-items: space-between;
+}
+
+* {
+    padding: 0rem;
+    margin: 0rem;
+}
+
+body {
+    overflow-x: hidden;
+    font-family: 'Be Vietnam';
+    font-size: $font-size;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+h1 {
+    font-weight: $font-bold;
+}
+
+h2 {
+    font-weight: $font-medium;
+    font-size: 1.875rem;
+    line-height: 1.2;
+}
+
+h3 {
+    font-size: 0.8125rem;
+    font-weight: $font-bold;
+}
+
+p {
+    color: $darkGrayishBlue;
+}
+
+button {
+    cursor: pointer;
+    font-weight: $font-medium;
+    padding: 0.625rem 1.5625rem;
+    background-color: $brightRed;
+    color: white;
+    outline: none;
+    border: 0px;
+    border-radius: 25px;
+    filter: drop-shadow(0 5px 2px $brightRed);
+    transition: all 200ms ease-in-out;
+}
+
+button:hover {
+    opacity: 0.7;
+}
